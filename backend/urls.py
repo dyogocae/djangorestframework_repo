@@ -7,7 +7,7 @@ from .views import UserViewSet, GroupViewSet
 router = routers.DefaultRouter()
 router.register(r'users', UserViewSet)
 router.register(r'groups', GroupViewSet)
-router.register(r'list', ListViewSet)
+router.register(r'list', ListViewSet, basename='list')
 router.register(r'item', ItemViewSet)
 
 
